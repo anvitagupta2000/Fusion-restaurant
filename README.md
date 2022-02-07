@@ -25,7 +25,6 @@ You have to install the following to be able to run and test the application:
     ```bash
     npm install
     ```
-    ```
 2. Create a new folder with the name ```data``` anywhere in your machine and run:
     ```bash
     mongod --dbpath=data
