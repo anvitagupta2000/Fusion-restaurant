@@ -1,0 +1,46 @@
+<div class="center">
+<mat-toolbar class="title">
+  <h2 class="login">Login</h2>
+  <button class="close" mat-button mat-dialog-close>&times;</button>
+</mat-toolbar>
+<br>
+
+<form class="example-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <mat-dialog-content>
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Username" type="text" formControlName="username"
+        [ngClass]="{ 'is-invalid': submitted && f.username.errors }" [(ngModel)]="user.username" name="username"
+        required />
+    </mat-form-field>
+
+    <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+      <div *ngIf="f.username.errors.required">Username is required</div>
+    </div>
+
+    <br>
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" placeholder="Password" formControlName="password"
+        [ngClass]="{ 'is-invalid': submitted && f.password.errors }" [(ngModel)]="user.password" name="password"
+        required />
+
+    </mat-form-field>
+    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+      <div *ngIf="f.password.errors.required">Password is required</div>
+    </div>
+
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <div class="buttons">
+      <button mat-raised-button [disabled]="loading">
+        Login
+      </button><br><br>
+      New user?
+      <a (click)="register()">
+        Register</a>
+    </div>
+  </mat-dialog-actions>
+</form>
+</div>
