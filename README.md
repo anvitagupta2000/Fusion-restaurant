@@ -30,12 +30,16 @@ You have to install the following to be able to run and test the application:
     mongod --dbpath=data
     use fusion
     ```
-4. Run the application and go to [localhost:3000] to see the application running.
+3. Go to FusionServer folder and run:
     ```bash
     npm start
     ```
-5. If you want to populate the database with some dummy data go to the ```db``` folder.
-
+3. Go to Fusion folder and run:
+    ```bash
+    ng serve
+    ```
+4. Go to [localhost:4200] to see the application running.
+    
 ### Technologies Used:
 - [Node.js](https://nodejs.org/en/): Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [AngularJS](https://angularjs.org/): AngularJS is a JavaScript-based open-source front-end web application framework.
