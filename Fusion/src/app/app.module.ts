@@ -20,7 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatSliderModule } from '@angular/material/slider';
 import { baseURL } from './shared/baseurl';
-
+import { MatPaginatorModule } from '@angular/material/paginator';
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
@@ -93,7 +93,8 @@ import { LoginComponent } from './login/login.component';
     MatButtonModule,
     MatListModule,
     AppRoutingModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule
   ],
   providers: [
     DishService, 

@@ -1,8 +1,15 @@
-table {
-    width: 80%;
+container {
     margin:auto;
     margin-bottom:10px;
   }
   h3{
-    margin-left:125px;
+    margin-left:19px;
+  }
+  .mat-header-cell{
+    font-size: medium;
+    font-weight: bold;
+    color:black;
+  }
+  .mat-table{
+    width:800px;
   }
